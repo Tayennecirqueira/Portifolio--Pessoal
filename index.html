@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="./img/dev.ico" type="image/x-icon">
+    <title>Portifólio</title>
+</head>
+
+<body>
+    <div class="particulas"></div>
+
+
+    <nav class="navegacao">
+        <ul class="menu">
+            <li>
+                <a href="#inicio" class="menu-link">Início</a>
+            </li>
+            <li>
+                <a href="#sobre" class="menu-link">Sobre</a>
+            </li>
+            <li>
+                <a href="#projetos" class="menu-link">Experiências</a>
+            </li>
+            <li>
+                <a href="#contato" class="menu-link">Contato</a>
+            </li>
+        </ul>
+    </nav>
+
+    <main id="inicio" class="cabecalho">
+
+        <img src="./img/eu.jpg" alt="Foto de Tayenne Cirqueira" class="foto-perfil">
+        <h1>Tayenne Cirqueira</h1>
+        <p class="cabecalho-subtitulo">Desenvolvedora Front End</p>
+
+    </main>
+
+    <section id="sobre" class="sobre">
+        <h2 class="sobre-titulo">Sobre Mim</h2>
+        <div class="sobre-caixa">
+            <p class="sobre-paragrafo">
+                Sou estudante de Engenharia de Software com experiência em rotinas administrativas, análise de dados e
+                suporte técnico. Tenho interesse em desenvolvimento front end e back end, bancos de dados e automações.
+                Atualmente me aperfeiçoo em Python, SQL e metodologias ágeis. Busco integrar times de tecnologia onde eu
+                possa contribuir e continuar evoluindo como desenvolvedora.
+
+            </p>
+        </div>
+
+
+    </section>
+
+    <section id="experiencias" class="experiencias">
+
+        <h2 class="experiencias-titulo">Experiências</h2>
+        <div class="experiencias-caixa">
+
+            <div class="experiencias-card">
+                <img src="./img/Assistente2.jpg" alt="Assistente 2" class="experiencias-imagem">
+                <div class="caixa-textos-experencias">
+                    <h3 class="info-experiencias">Assistente de Direção</h3>
+                    <p class="listas-experiencias">
+                        - Análise de dados e relatórios gerenciais <br>
+                        - Coordenação de fluxos <br>
+                        - Suporte em Laboratórios de Informática <br>
+                        - Negociação Interna e Externa <br>
+                        - Reuniões de Planejamento Estratégico <br></p>
+                </div>
+            </div>
+
+            <div class="experiencias-card">
+                <img src="./img/Auxiliar.jpg" alt="Auxiliar" class="experiencias-imagem">
+                <div class="caixa-textos-experencias">
+                    <h3 class="info-experiencias">Assistente Administrativo</h3>
+                    <p class="listas-experiencias">
+                        - Suporte técnico básico <br>
+                        - Controle de sistemas <br>
+                        - Monitoramento de indicadores <br>
+                        - Controle de Estoque <br>
+                        - Controle de Inventário <br>
+                        - Emissão de Relatórios <br></p>
+                </div>
+            </div>
+
+            <div class="experiencias-card">
+                <img src="./img/Assistente1.jpg" alt="Assistente 1" class="experiencias-imagem">
+                <div class="caixa-textos-experencias">
+                    <h3 class="info-experiencias">Auxiliar Administrativo</h3>
+                    <p class="listas-experiencias">
+                        - Preencher planilhas e formulários<br>
+                        - Controlar o estoque<br>
+                        - Atender clientes, fornecedores e visitantes<br></p>
+                </div>
+            </div>
+
+            <div class="experiencias-card">
+                <img src="./img/líder.jpg" alt="Lider" class="experiencias-imagem">
+                <div class="caixa-textos-experencias">
+                    <h3 class="info-experiencias">Líder de Equipe</h3>
+                    <p class="listas-experiencias">
+                        - Gestão de equipe, planejamento de metas<br>
+                        - Avaliação de desempenho e melhorias de processo<br></p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="contato" class="contato">
+        <h2 class="contato-titulo">Entre em Contato</h2>
+
+        <form class="formulario-contato" id="formulario" onsubmit="enviarWhats(event)">
+            <div class="grupo-form">
+                <input placeholder="Nome" class="campo-form" id="nome">
+            </div>
+
+            <div class="grupo-form">
+                <textarea class="campo-form" placeholder="Digite sua Mensagem" rows="6" id="mensagem"></textarea>
+            </div>
+
+            <button type="submit" class="botao-form">Enviar Whatsapp</button>
+        </form>
+
+    </section>
+
+    <script>
+        function enviarWhats(event) {
+            event.preventDefault()
+
+            const nome = document.getElementById('nome').value;
+            const mensagem = document.getElementById('mensagem').value;
+            const telefone = '5531971789108'
+
+            const texto = `Olá! Me chamo ${nome}, ${mensagem}`
+            const msgFormatada = encodeURIComponent(texto)
+
+            const url = `https://wa.me/${telefone}?text=${msgFormatada}`
+
+            window.open(url, '_blank')
+
+        }
+
+
+    </script>
+</body>
+
+</html>
