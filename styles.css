@@ -85,20 +85,20 @@ body {
 }
 
 h1 {
-    font-size: 3.5rem;
+    font-size: 2.75rem;
     color: var(--primaria);
     font-weight: bold;
-    margin:14px;
+    margin:20px;
 }
 
 .cabecalho-subtitulo {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     color: var(--claro);
     
 }
 
 .sobre {
-    padding: 6rem 2rem;
+    padding: 4rem 2rem;
 }
 
 .sobre-titulo {
@@ -126,7 +126,7 @@ h1 {
 }
 
 .experiencias {
-    padding: 6rem 2rem;
+    padding: 4rem 2rem;
 }
 
 .experiencias-titulo {
