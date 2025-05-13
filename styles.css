@@ -216,53 +216,6 @@ h3 {
     color: #fff;
 }
 
-@media (max-width: 768px) {
-  .menu {
-    flex-direction: column;
-    gap: 1rem;
-    padding: 1rem 0;
-  }
-
-  .navegacao {
-    padding: 1rem;
-  }
-
-  .menu-link {
-    font-size: 1rem;
-    text-align: center;
-  }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 .experiencias {
