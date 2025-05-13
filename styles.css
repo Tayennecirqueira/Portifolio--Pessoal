@@ -145,7 +145,7 @@ h3 {
     font-size: 3rem;
     color: var(--claro);
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .projetos-paragrafo {
@@ -214,6 +214,23 @@ h3 {
 .btn:hover {
     background-color: var(--hover); /* cor ao passar o mouse */
     color: #fff;
+}
+
+@media (max-width: 768px) {
+  .menu {
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem 0;
+  }
+
+  .navegacao {
+    padding: 1rem;
+  }
+
+  .menu-link {
+    font-size: 1rem;
+    text-align: center;
+  }
 }
 
 
