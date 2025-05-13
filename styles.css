@@ -36,7 +36,7 @@ body {
     display: flex;
     justify-content: center;
     list-style: none;
-    gap: rem;
+    gap: 3rem;
 
 }
 
