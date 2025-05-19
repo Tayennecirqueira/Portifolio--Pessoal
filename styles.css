@@ -386,10 +386,3 @@ h3 {
     align-items: center;
   }
 }
-
-.projetos-card {
-    height: 420px; /* ajuste conforme necessário */
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
