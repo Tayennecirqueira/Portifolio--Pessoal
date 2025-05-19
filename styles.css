@@ -364,7 +364,7 @@ h3 {
 
 @media (max-width: 768px) {
   .menu {
-    flex-direction: column;
+    flex-direction: flex;
     gap: 1rem;
     padding: 1rem 0;
   }
